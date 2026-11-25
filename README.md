@@ -7,7 +7,7 @@ GET /health -> {"ok":true}.
 
 Env vars (set only in the Render dashboard, never in this repo):
 - GEMINI_KEYS (required, comma-separated list of Gemini API keys)
-- GEMINI_MODEL (default gemini-2.5-flash)
+- GEMINI_MODEL (default gemini-3.8-flash)
 - GEMINI_BASE_URL (default https://generativelanguage.googleapis.com/v1beta/openai)
 
 No dependencies; Node >= 18 (global fetch). Same /chat contract as

@@ -6,7 +6,7 @@
 const http = require('http');
 const PORT = process.env.PORT || 10000;
 const BASE = (process.env.GEMINI_BASE_URL || 'https://generativelanguage.googleapis.com/v1beta/openai').replace(/\/$/, '');
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
 const KEYS = (process.env.GEMINI_KEYS || '').split(',').map((k) => k.trim()).filter(Boolean);
 let nextKey = 0;
 
