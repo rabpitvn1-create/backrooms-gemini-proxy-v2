@@ -1,0 +1,1 @@
+{"engines":{"node":">=18"},"name":"backrooms-gemini-proxy-v2","private":true,"scripts":{"start":"node server.js"},"type":"commonjs"}
