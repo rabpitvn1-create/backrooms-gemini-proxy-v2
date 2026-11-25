@@ -34,6 +34,8 @@ const server = http.createServer((req, res) => {
           max_tokens: j.max_tokens,
           response_format: j.response_format,
         };
+        // Let callers cap thinking tokens (e.g. reasoning_effort 'minimal'/'low').
+        if (j.reasoning_effort) payload.reasoning_effort = j.reasoning_effort;
         // Try each key once, starting round-robin. 429/503 = exhausted/overloaded,
         // 401/403 = dead key — rotate past all of them.
         const start = nextKey % KEYS.length;
